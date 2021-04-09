@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coureur.MainPage">
+
+    <Frame CornerRadius="8" OutlineColor="Black" BackgroundColor="#353535" Padding="0">
+        <Grid BackgroundColor="#606060" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Hier" Grid.Column="0" Grid.Row="0"/>
+
+            <Grid BackgroundColor="#353535" Grid.Column="0" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100*"/>
+                    <RowDefinition Height="200*"/>
+                 </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Frame BackgroundColor="#606060" CornerRadius="4" Grid.Column="0" Grid.Row="0" Margin="10" Padding="5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="Coureur.png"  HorizontalOptions="Start" Grid.Column="0" Grid.Row="0"/>
+                        <Label Text="Ostricourt - 50 EF" Grid.ColumnSpan="3"  Grid.Column="1" Grid.Row="0"/>
+
+                        <Label Text="7,00" FontSize="18" Grid.RowSpan="2" VerticalTextAlignment="Center" Grid.Column="0" Grid.Row="1"/>
+                        <Label Text="KM" FontSize="10"  Grid.RowSpan="2" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                        
+                        
+                        <Label Text="TEMPS" FontSize="10" VerticalTextAlignment="End"  Grid.Column="2" Grid.Row="1"/>
+                        <Label Text="48:58" FontSize="16" VerticalTextAlignment="Start" Grid.Column="2" Grid.Row="2"/>
+                        
+                        
+                        <Label Text="ALLURE" FontSize="10" VerticalTextAlignment="End" Grid.Column="3" Grid.Row="1"/>
+                        <Label Text="7:00" FontSize="16" VerticalTextAlignment="Start" Grid.Column="3" Grid.Row="2"/>
+
+                    </Grid>
+                    
+                </Frame>
+
+                <Grid BackgroundColor="#353535" Margin="10" Grid.Column="0" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    
+
+                    <Label Text="Fréq Cardiaque" FontSize="10" Grid.Column="1" Grid.Row="0"/>
+                    <Image Source="Coeur96.png" Grid.Column="0" Grid.Row="0"/>
+                    <Label Text="56" Grid.Column="2" Grid.Row="0"/>
+                    <Label Text="176" Grid.Column="4" Grid.Row="0"/>
+
+                    <Label Text="Body Battery" FontSize="10" Grid.Column="1" Grid.Row="1"/>
+                    <Image Source="Calories96.png" Grid.Column="0" Grid.Row="1"/>
+                    <Label Text="+22" Grid.Column="2" Grid.Row="1"/>
+                    <Label Text="/"  Grid.Column="3" Grid.Row="1"/>
+                    <Label Text="-25"  Grid.Column="4" Grid.Row="1"/>
+
+                    <Label Text="Niveau de stress" FontSize="10" Grid.Column="1" Grid.Row="2"/>
+                    <Image Source="Lotus96.png" Grid.Column="0" Grid.Row="2"/>
+                    <Label Text="21" Grid.Column="2" Grid.Row="2"/>
+
+                    <Label Text="Mn intensives" FontSize="10" Grid.Column="1" Grid.Row="3"/>
+                    <Image Source="Montre100.png" Grid.Column="0" Grid.Row="3"/>
+                    <Label Text="116" Grid.Column="2" Grid.Row="3"/>
+                    <Label Text="Total quotidien" Grid.ColumnSpan="2" FontSize="10"  Grid.Column="3" Grid.Row="3"/>
+
+                    <Label Text="Pas" Grid.Column="1" FontSize="10" Grid.Row="4"/>
+                    <Image Source="Empreintes80.png" Grid.Column="0" Grid.Row="4"/>
+                    <Label Text="9673" Grid.Column="2" Grid.Row="4"/>
+
+                    <Label Text="Calories" FontSize="10" Grid.Column="1" Grid.Row="5"/>
+                    <Image Source="Calories96.png" Grid.Column="0" Grid.Row="5"/>
+                    <Label Text="2839" Grid.Column="2" Grid.Row="5"/>
+
+                </Grid>
+
+            </Grid>
+        </Grid>
+
+    </Frame>
+</ContentPage>
